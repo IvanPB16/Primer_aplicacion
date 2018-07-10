@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../estilo/estiloformulario.css" >
+      <script type="text/javascript">
+      var mensaje = alert("En este apartado podrás visualizar la información registrada de manera general o buscando un registrado específico.");
+      </script>
+    </head>
+    <body>
+        <h2>Ver registros de ventas</h2>
+        <br>
+        <nav class="menuformulario">
+          <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Actualizar.html">Actualizar compra</a></li>
+            <li><a href="#">Consultar ventas</a></li>
+            <li><a href="Eliminar.html">Eliminar</a></li>
+          </ul>
+        </nav>
+        <br><br><br>
+        <form method="post" action="consultar.php">
+        Mostrar peliculas vendidas:
+        <br><br>
+        <button type="submit">Ver registro</button>
+        </form>
+        <br>
+        <form method="post" action="consultar2.php">
+        Buscar un registro:
+        <input type="text" name="nombre" placeholder="Ej. Fernando">
+        <button type="submit">Ver registro</button>
+        </form>
+    </body>
+  </html>

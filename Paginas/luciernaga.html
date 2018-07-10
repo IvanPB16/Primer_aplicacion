@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../estilo/estilospagina.css" >
+    <title>La tumba de las luciérnagas</title>
+    <script>
+        function validarCuenta(){
+
+            var caja = document.getElementById("cantidad");
+
+            var n = caja.value;
+            if (isNaN(n)) {
+                caja.value = "Valor no válido";
+                caja.style.borderColor = "Red";
+            }
+              else {
+            caja.value = "";
+            caje.style.borderColor="";
+          }
+
+        }
+
+    </script>
+  </head>
+  <body>
+    <nav class="menupagina">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Formulario/Actualizar.html">Actualizar compra</a></li>
+        <li><a href="../Formulario/Consultar.html">Consultar ventas</a></li>
+        <li><a href="../Formulario/Eliminar.html">Eliminar</a></li>
+      </ul>
+    </nav>
+    <br><br><br>
+
+    <div class="imagen"><img src="../Peliculas/Tumba_luciernaga.jpg" width="100" height="150"></a></div>
+
+
+    <div class="formulario">
+      <form method="post" action="compra.php">
+      Ingresar el nombre:
+      <input type="text" placehorder="Ej.Duro de matar" name="nombre">
+        <br><br>
+      Ingresa el número de cuenta:
+      <input type="text" placeholder="1" id="cantidad" name="cantidad">
+        <br><br>
+      Precio:$50
+        <br><br>
+      Fecha de la compra
+      <input type="text" placeholder="17/06/09" name="fecha">
+      <br>
+      <button type="submit">Comprar</button>
+      </form>
+      <div>
+          <button onclick="validarCuenta()">Comprobar datos</button>
+
+    <br>
+    <h1>La tumba de las luciérnagas</h1>
+    <div class="text">
+    <p><b>Director:</b>Isao Takahata.</p>
+    <p><b>Guion: </b>Isao Takakata.</p>
+    <p><b>Música: </b>Michio Mamiya.</p>
+    <p><b>Fotografía: </b>Animation.</p>
+    <p><b>País: </b>Japón.</p>
+    <p><b>Año: </b>1988.</p>
+    <p><b>Género: </b>Anime.</p>
+    <p><b>Duración: </b>88 minutos.</p>
+    <p><b>Distribución: </b> Toei Animation.</p>
+    <p><b>Sinopsis</b>Los protagonistas son Seita, niño de trece años, y su hermana Setsuko, de cinco. Año 1945, la zona portuaria de Kobe. El padre militar, está guerreando en la Armada japonesa,
+       y la madre es herida en un bombardeo y muere. Setusko intenta hacerse cargo de su hermana, y se instalan en la casa de una tía. Las penurias de la situación terminan agriando la relación, y Seita decide abandonar a su pariente y alojarse con su hermana en un refugio, una cueva a orillas de una laguna.
+       A pesar de algunas alegrías efímeras, la vida es demasiado dura; la niña enferma de desnutrición, Seita intenta de todo -hasta robar- pero no puede evitar el derrumbe; y a poco de enterarse de la rendición de Japón y de la muerte de su padre,
+      la misma Setsuko termina extinguiéndose en sus brazos.
+    </p>
+  </div>
+
+  </body>
+</html>

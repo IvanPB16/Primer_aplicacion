@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../estilo/estilospagina.css" >
+    <title>Saint Seiya Overture</title>
+    <script>
+        function validarCuenta(){
+
+            var caja = document.getElementById("cantidad");
+
+            var n = caja.value;
+            if (isNaN(n)) {
+                caja.value = "Valor no válido";
+                caja.style.borderColor = "Red";
+            }
+              else {
+            caja.value = "";
+            caje.style.borderColor="";
+          }
+
+        }
+
+    </script>
+  </head>
+  <body>
+    <nav class="menupagina">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Formulario/Actualizar.html">Actualizar compra</a></li>
+        <li><a href="../Formulario/Consultar.html">Consultar ventas</a></li>
+        <li><a href="../Formulario/Eliminar.html">Eliminar</a></li>
+      </ul>
+    </nav>
+    <br><br><br>
+
+    <div class="imagen"><img src="../Peliculas/Los Caballeros Del Zodiaco obertura del cielo.jpg" width="100" height="150"></a></div>
+
+    <div class="formulario">
+      <form method="post" action="compra.php">
+      Ingresar el nombre:
+      <input type="text" placehorder="Ej.Juan Perez" name="nombre">
+        <br><br>
+      Ingresa el número de cuenta:
+      <input type="text" placeholder="1" id="cantidad" name="cantidad">
+        <br><br>
+      Precio:$50
+        <br><br>
+      Fecha de la compra
+      <input type="text" placeholder="17/06/09" name="fecha">
+      <br>
+      <button type="submit">Comprar</button>
+      </form>
+    </div>
+      <button onclick="validarCuenta()">Comprobar datos</button>
+
+    <br>
+    <h1>Saint Seiya</h1>
+  <div class="formulario">
+    <h3>Titulo Hispanoamericano:</h3><p> Apertura de la Saga del Cielo.</p>
+    <h3>Titulo España: </h3><p>Inicio de la saga del cielo.</p>
+    <h3>Director: </h3><p>Shigeyasu Yamauchi.</p>
+    <h3>Guion: </h3><p>Akatsuki Yamatoya, Michiko Yokote, Masami Kurumada.</p>
+    <h3>Música: </h3><p>Seiji Yokoyama.</p>
+    <h3>Fotografía: </h3><p>Michi Himeno, Shingo Araki.</p>
+    <h3>Reparto: </h3><p>Tōru Furuya, Hirotaka Suzuoki, Kōichi Hashimoto, Ryō Horikawa, Hideyuki Hori, Keiko Han.</p>
+    <h3>País: </h3><p>Japón.</p>
+    <h3>Año: </h3><p>2004.</p>
+    <h3>Audio</h3><p>Español Latino</p>
+    <h3>Género: </h3><p>Anime, acción.</p>
+    <h3>Duración: </h3><p>83 minutos.</p>
+    <h3>Distribución: </h3> Toei Animation.</p>
+    <h3>Sinopsis</h3><p>Tenkai-hen joso Overture relata la historia de Seiya después de la batalla de Hades donde quedó en estado vegetativo por la herida que le provocó Hades.
+      Seiya es blanco de tres ángeles enviados para ejecutarle, pero es protegido por Atenea.
+      Más tarde aparece Artemisa, Diosa de la caza y la luna, reclamando a Atenea la protección que brindaba a Seiya,
+       pero Atenea transfiere el mando de la tierra a Artemisa a cambio del perdón de sus santos.
+    </p>
+  </div>
+
+  </body>
+</html>

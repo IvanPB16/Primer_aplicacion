@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../estilo/estilospagina.css" >
+    <title>Leyenda del santuario</title>
+    <script>
+        function validarCuenta(){
+
+            var caja = document.getElementById("cantidad");
+
+            var n = caja.value;
+            if (isNaN(n)) {
+                caja.value = "Valor no válido";
+                caja.style.borderColor = "Red";
+            }
+              else {
+            caja.value = "";
+            caje.style.borderColor="";
+          }
+
+        }
+    </script>
+  </head>
+  <body>
+    <nav class="menupagina">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Formulario/Actualizar.html">Actualizar compra</a></li>
+        <li><a href="../Formulario/Consultar.html">Consultar ventas</a></li>
+        <li><a href="../Formulario/Eliminar.html">Eliminar</a></li>
+      </ul>
+    </nav>
+    <br><br><br>
+
+    <div class="imagen"><img src="../Peliculas/La_leyenda_del_santuario.jpg" width="100" height="150"></a></div>
+
+
+    <div class="formulario">
+    <form method="post" action="compra.php">
+    Ingresar el nombre:
+    <input type="text" placehorder="Ej.Juan Perez" name="nombre">
+      <br><br>
+    Ingresa el número de cuenta:
+    <input type="text" placeholder="1" id="cantidad" name="cantidad">
+      <br><br>
+    Precio:$50
+      <br><br>
+    Fecha de la compra
+    <input type="text" placeholder="17/06/09" name="fecha">
+    <br>
+    <button type="submit">Comprar</button>
+    </form>
+    </div>
+    <button onclick="validarCuenta()">Comprobar datos</button>
+
+    <br>
+    <h1>Saint Seiya: Legend of Sanctuary</h1>
+    <div class="text">
+    <h3>Titulo: </h3><p> Saint Seiya: Legend of Sanctuary.</p>
+    <h3>Director: </h3><p>Keichi Sato.</p>
+    <h3>Reparto: </h3><p>Nobuhiko Okamoto, Kenji Nojima, Rikiya Koyama.</p>
+    <h3>País: </h3><p>Japón.</p>
+    <h3>Año: <</h3><p>2004.</p>
+    <h3>Género: </h3><p>Animación, Aventura, Fantasía.</p>
+    <h3>Duración: </h3><p>93 minutos.</p>
+    <h3>Distribución: </h3><p> Toei Animation.</p>
+    <h3>Sinopsis</h3><p>"Los guerreros llamados "Caballeros de Athena" son los campeones de la esperanza que siempre han aparecido desde la Era del Mito cuando el mal amenaza al mundo.
+      En esta historia de presente día, muchos años después de la larga lucha "La Guerra Santa" encontramos a Saori Kido, una niña preocupada por sus misteriosos poderes.
+      Ella es salvada por un muchacho, Seiya un "Caballero de Bronce" de un ataque repentino por un asesino, a través del accidente Saori se da cuenta de su destino y su misión y decide ir a "Santuario" con Seiya y sus amigos quienes también son Caballeros de Bronce.
+      En él Santuario se enfrentan al "Patriarca" y emprenden una batalla desesperada contra los más poderosos Caballeros, los "Caballeros dorados".
+    </p>
+
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../estilo/estilospagina.css" >
+
+    <title>El castillo Vagabundo</title>
+    <script>
+        function validarCuenta(){
+
+            var caja = document.getElementById("cantidad");
+
+            var n = caja.value;
+            if (isNaN(n)) {
+                caja.value = "Valor no válido";
+                caja.style.borderColor = "Red";
+            }
+              else {
+            caja.value = "";
+            caje.style.borderColor="";
+          }
+
+        }
+
+    </script>
+  </head>
+
+
+  <body>
+    <nav class="menupagina">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Formulario/Actualizar.html">Actualizar compra</a></li>
+        <li><a href="../Formulario/Consultar.html">Consultar ventas</a></li>
+        <li><a href="../Formulario/Eliminar.html">Eliminar</a></li>
+      </ul>
+    </nav>
+
+    <br><br><br>
+    <div class="imagen"><img src="../Peliculas/Castillo.jpg" width="100" height="150"></a></div>
+
+    <form method="post" action="compra.php" class="formulario">
+    Ingresar el nombre:
+    <input type="text" placehorder="Ej.Juan Perez" name="nombre">
+      <br><br>
+    Ingresa el número de cuenta:
+    <input type="text" placeholder="1" id="cantidad" name="cantidad">
+      <br><br>
+    Precio:$50
+      <br><br>
+    Fecha de la compra
+    <input type="text" placeholder="17/06/09" name="fecha">
+    <br>
+    <button type="submit">Comprar</button>
+
+    </form>
+
+    <button onclick="validarCuenta()">Comprobar datos</button>
+
+    <br>
+    <div class="text">
+    <h1>El castillo vagabundo</h1>
+    <h3>Titulo Hispanoamericano:</h3>
+    <p>El increíble castillo vagabundo.</p>
+    <h3>Director: </h3>
+    <p>Hayao Miyazaki.</p>
+    <h3>Reparto: </h3>
+    <p>Animation.</p>
+    <h3>País: </h3>
+    <p>Japón.</p>
+    <h3>Año: </h3>
+    <p>2004.</p>
+    <h3>Género: </h3>
+    <p>Animación, aventuras.</p>
+    <h3>Duración: </h3>
+    <p>119 minutos.</p>
+    <h3>Sinopsis</h3>
+    <p>Sophie tiene 18 años. Trabaja sin descanso en la tienda de sombreros que mantenía su padre antes de fallecer. En uno de sus poco frecuentes paseos por la ciudad, Sophie conoce al mago Howl.
+       Howl es un joven con poderes extraordinarios y extremadamente seductor. Sin embrago, a Sophie le da la impresión de que Howl esconde algo…
+      El encuentro entre Sophie y Howl no ha pasado desapercibido para la Bruja de las Landas, quien odia visceralmente a Howl.
+      Cuando Sophie vuelve a la tienda, la Bruja, haciéndose pasar por una clienta, la engaña y la hechiza, transformándola en una anciana de 90 años que no puede revelar su verdadera identidad.
+      Sophie, imposibilitada para decirle a sus amigas y compañeras quién es realmente y lo que le ha pasado, se ve obligada a abandonar su casa y decide entonces buscar a Howl para que le ayude a romper el hechizo.
+      Howl vive en un “castillo mágico” que tiene la peculiaridad de trasladarse a voluntad de su dueño.
+      Sophie se adentra en lo desconocido, en busca del castillo ambulante, perdiéndose en tierras desoladas.
+      Finalmente y casi por casualidad, llega al lugar en el que se encuentra la residencia de Howl.
+      Allí conoce al joven aprendiz del mago, Marko, y al encargado del mantenimiento del castillo, Calcifer, el demonio del fuego.
+      Al no poder revelar su identidad, Sophie tiene que inventar alguna excusa para quedarse en el castillo, y consigue que la contraten de como asistenta.
+      Esta “anciana” tan misteriosa y dinámica le dará en poco tiempo un nuevo aspecto a la descuidada residencia de Howl, consiguiendo que parezca un verdadero hogar.
+    </p>
+  </div>
+  </body>
+</html>
